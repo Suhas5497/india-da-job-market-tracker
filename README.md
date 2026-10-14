@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Data-560%20postings%20%C2%B7%20Oct%202026-c9a96e?style=flat-square"/>
 </p>
 
-<p align="center"><a href="LIVE_APP_URL"><b>▶ Open the live dashboard</b></a></p>
+<p align="center"><i>Live dashboard link coming soon – run it locally in 2 commands (see below).</i></p>
 
 ![Dashboard](assets/dashboard.png)
 
