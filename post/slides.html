@@ -1,0 +1,87 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+:root{--bg:#0a0e1a;--card:#111729;--line:#1f2740;--gold:#c9a96e;--ink:#eceae4;--mut:#9aa0b0;--dim:#6b7186}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;font-family:Inter,sans-serif;color:var(--ink)}
+.s{width:1080px;height:1350px;background:radial-gradient(1200px 700px at 85% -10%,#18213d 0%,var(--bg) 60%);position:relative;overflow:hidden;padding:96px 92px;display:flex;flex-direction:column}
+.s:before{content:"";position:absolute;left:92px;right:92px;top:0;height:4px;background:var(--gold);opacity:.8}
+.k{font-size:22px;letter-spacing:5px;font-weight:700;color:var(--gold);text-transform:uppercase}
+.serif{font-family:"GFS Baskerville","Caladea",Georgia,serif;font-weight:400}
+h1{font-size:92px;line-height:1.04;margin-top:46px;letter-spacing:-1px}
+h2{font-size:64px;line-height:1.08;margin-top:34px}
+.lead{font-size:31px;line-height:1.5;color:var(--mut);margin-top:34px;max-width:860px}
+.big{font-family:"Inter Display",Inter,sans-serif !important;font-weight:300 !important;font-size:260px;line-height:.9;color:var(--gold);margin-top:70px;letter-spacing:-8px}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:30px;font-size:24px;color:var(--dim)}
+.foot b{color:var(--ink);font-weight:600}
+.pg{color:var(--gold);font-weight:600}
+.row{display:flex;align-items:center;gap:24px;margin:22px 0}
+.lab{width:190px;font-size:28px;color:var(--mut);text-align:right}
+.bar{height:58px;border-radius:0 6px 6px 0;background:var(--gold);opacity:.35}
+.bar.hi{opacity:1}
+.val{font-size:30px;font-weight:600}
+.note{font-size:24px;color:var(--dim);margin-top:26px;line-height:1.5}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:56px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:34px 34px 30px}
+.tile .n{font-family:"Inter Display",Inter,sans-serif !important;font-weight:300 !important;font-size:72px;color:var(--gold);line-height:1;letter-spacing:-1px}
+.tile .t{font-size:25px;color:var(--mut);margin-top:16px;line-height:1.4}
+.shot{margin-top:50px;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.shot img{width:100%;display:block}
+.pipe{display:flex;gap:14px;margin-top:40px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:12px 22px;font-size:23px;color:var(--ink)}
+.chip i{font-style:normal;color:var(--gold)}
+</style></head><body>
+
+<!-- 1 cover -->
+<section class="s" id="s1">
+ <div class="k">India · Data Analyst job market · Oct 2026</div>
+ <h1 class="serif">How many analyst jobs are really open to freshers?</h1>
+ <div class="big serif">12.5%</div>
+ <div class="lead">I collected <b style="color:var(--ink)">1,000</b> Indian analyst job postings, cleaned them to <b style="color:var(--ink)">560</b> unique roles and analysed them in SQL. This is what employers actually ask for.</div>
+ <div class="foot"><span><b>Suhas Dhamapurkar</b> · Data Analyst</span><span class="pg">01 / 04</span></div>
+</section>
+
+<!-- 2 experience -->
+<section class="s" id="s2">
+ <div class="k">Finding 1 · Experience asked</div>
+ <h2 class="serif">"Entry level" rarely means entry level.</h2>
+ <div class="lead" style="margin-bottom:40px">Minimum experience stated in each posting (367 postings that give a number).</div>
+ <div class="row"><div class="lab">0–1 yrs</div><div class="bar" style="width:157px"></div><div class="val">7.6%</div></div>
+ <div class="row"><div class="lab">2 yrs</div><div class="bar" style="width:277px"></div><div class="val">13.4%</div></div>
+ <div class="row"><div class="lab">3–4 yrs</div><div class="bar" style="width:522px"></div><div class="val">25.3%</div></div>
+ <div class="row"><div class="lab">5–7 yrs</div><div class="bar hi" style="width:704px"></div><div class="val">34.1%</div></div>
+ <div class="row"><div class="lab">8+ yrs</div><div class="bar" style="width:405px"></div><div class="val">19.6%</div></div>
+ <div class="note">The most common ask is 5–7 years. Only 1 in 13 postings asks for 0–1 years.</div>
+ <div class="foot"><span><b>Suhas Dhamapurkar</b> · Data Analyst</span><span class="pg">02 / 04</span></div>
+</section>
+
+<!-- 3 skills -->
+<section class="s" id="s3">
+ <div class="k">Finding 2 · What fresher roles ask for</div>
+ <h2 class="serif">SQL and Excel first. Python is the differentiator.</h2>
+ <div class="lead" style="margin-bottom:40px">Share of fresher-friendly Data / Business / Product Analyst postings mentioning each skill (n = 55).</div>
+ <div class="row"><div class="lab">SQL</div><div class="bar hi" style="width:600px"></div><div class="val">55%</div></div>
+ <div class="row"><div class="lab">Excel</div><div class="bar hi" style="width:600px"></div><div class="val">55%</div></div>
+ <div class="row"><div class="lab">Power BI</div><div class="bar" style="width:360px"></div><div class="val">33%</div></div>
+ <div class="row"><div class="lab">Python</div><div class="bar" style="width:300px"></div><div class="val">27%</div></div>
+ <div class="row"><div class="lab">Tableau</div><div class="bar" style="width:300px"></div><div class="val">27%</div></div>
+ <div class="grid" style="margin-top:44px">
+  <div class="tile"><div class="n serif">148 vs 95</div><div class="t">postings mention Power BI vs Tableau</div></div>
+  <div class="tile"><div class="n serif">1 in 5</div><div class="t">Data Analyst postings already mention GenAI / LLMs</div></div>
+ </div>
+ <div class="foot"><span><b>Suhas Dhamapurkar</b> · Data Analyst</span><span class="pg">03 / 04</span></div>
+</section>
+
+<!-- 4 how built -->
+<section class="s" id="s4">
+ <div class="k">How I built it</div>
+ <h2 class="serif">From raw postings to an interactive dashboard.</h2>
+ <div class="pipe">
+  <span class="chip"><i>01</i>&nbsp; 1,000 postings</span>
+  <span class="chip"><i>02</i>&nbsp; Python + regex cleaning</span>
+  <span class="chip"><i>03</i>&nbsp; SQL views in DuckDB</span>
+  <span class="chip"><i>04</i>&nbsp; Streamlit + Plotly</span>
+ </div>
+ <div class="shot"><img src="../assets/dashboard.png"></div>
+ <div class="note">Role, seniority, experience asked, 20 skills and salary extracted from each posting and spot-checked against the source text. Code and method on GitHub: <span style="color:var(--gold)">Suhas5497/india-da-job-market-tracker</span></div>
+ <div class="foot"><span><b>Suhas Dhamapurkar</b> · Open to Data Analyst roles · Open to relocate</span><span class="pg">04 / 04</span></div>
+</section>
+</body></html>
